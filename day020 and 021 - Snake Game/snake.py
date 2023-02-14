@@ -13,7 +13,11 @@ class Snake:
 
     def __init__(self):
         self.body = []
+        self.head = Turtle()
         self.create_snake()
+        self.set_head()
+
+    def set_head(self):
         self.head = self.body[0]
         self.head.color("green")
 
@@ -27,6 +31,13 @@ class Snake:
         snake_segment.color("lime green")
         snake_segment.goto(position)
         self.body.append(snake_segment)
+
+    def reset(self):
+        for seg in self.body:
+            seg.reset()
+        self.body.clear()
+        self.create_snake()
+        self.set_head()
 
     def extend(self):
         self.add_body_segment(self.body[-1].position())
