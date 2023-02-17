@@ -12,8 +12,7 @@ states_img_path = "blank_states_img.gif"
 screen.addshape(states_img_path)
 turtle.shape(states_img_path)
 
-game_is_on = True
-while game_is_on:
+while len(guessed_states) < 50:
 
     user_guess = screen.textinput(
         title=f"{len(guessed_states)}/50 States Guessed",
@@ -21,10 +20,7 @@ while game_is_on:
     ).title()
 
     if user_guess == "Exit":
-        missing_states = list()
-        for state in all_states:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in guessed_states]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("last_missing_states.csv")
         break
