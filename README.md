@@ -9,7 +9,7 @@
 <h2 align="center"> 👣 walking trough </h2>
 
 - OOP
-- Turtle Graphics / Tkinter (GUI)
+- Turtle Graphics / Tkinter lib (GUI)
 - Pandas (Data Analysis)
 
 
