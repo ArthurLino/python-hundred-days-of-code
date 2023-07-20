@@ -11,6 +11,7 @@
 - OOP
 - Turtle Graphics / Tkinter lib (GUI)
 - Pandas (Data Analysis)
+- APIs
 
 
 <br/>
