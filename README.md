@@ -16,4 +16,4 @@
 
 <br/>
 
-<h6 align="center"> 👷🏻‍♂️🏗 under development...</h6>
+<h6 align="center"> 👷🏻‍♂️🏗  unfortunately, in standby mode... </h6>
